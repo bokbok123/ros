@@ -51,3 +51,36 @@ footer{
     text-align: center;
     padding: 10px;
 }
+
+
+@media only screen and (max-width: 1367px) {
+    .section-1 {
+        h1{
+
+            left: 0 !important;
+            transform: translate(23%, -50%) !important;
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section-1 {
+        h1{
+
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            width:100%;
+            text-align: center;
+
+        }
+    }
+    .section-2{
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
