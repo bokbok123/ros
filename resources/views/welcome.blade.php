@@ -1,99 +1,60 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('content')
+    <section class="section-1">
+        <h1>
+            GAME CHEAT SHEET <br>
+            RELEASE ALL THE UPDATED CHEAT<br>
+            UPGRADE SOON.
+        </h1>
+    </section>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <div class="container">
+        <section class="section-2">
+            <div>
+                <h1>DOWNLOAD YOUR CHEAT NOW</h1>
 
-            .full-height {
-                height: 100vh;
-            }
+                <h2>Public Release:</h2>
+                <p> Date:
+                    <?php
+                    $mytime = Carbon\Carbon::now();
+                    echo $mytime->format('m-d-Y') ?>
+                </p>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+                <p>ExiledROS cheat</p>
+                <p>Instruction :</p>
+                <p>1. First you need to Download the Updated Version of cheat from the below links</p>
+                <p><a href="https://shrtfly.com/st?api=cd5886af7d7aaa7c11b5d04d30998f6b29ceac46&url=https://mega.nz/#!mpRxAQqK!IFKPnTjmBEXb1c62zAeWjT-Q1TSlG_XEs8lFXRKN5C0">
+                    Click Here
+                </a></p>
 
-            .position-ref {
-                position: relative;
-            }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+                <p>2. After click on the “Active Cheat” button you will be redirected to the Captcha Solving site where you will have to solve the captcha and get the link.</p>
+                <p>3. Don’t close the loader, Open the game and play</p>
+                <p>4. You need to use the Left Mouse for enable hack, Right mouse for disable and Press Insert to hide/show menu</p>
+                <p>5. You can also drag the menu to anywhere you want.</p>
 
-            .content {
-                text-align: center;
-            }
+                <h1>Got Error?</h1>
+                <h2>Solution: Error 1</h2>
+                <p>1. If you get Error “Cannot find MSVCP120.dll</p>
+                <img src="{{ url('storage/error/errorcode.jpg') }}" />
+                <p>2. Then Please download this and copy paste it to your C:\Windows\System32 and C:\Windows\SysWow64 folder
+                    MSVCP120.dll: </p>
+                <p><a href="https://shrtfly.com/st?api=cd5886af7d7aaa7c11b5d04d30998f6b29ceac46&url=https://mega.nz/#!c1Y1HAoS!tzWHdOUKoG1QhKuQfDR0HtHvzsMM3dbLo5_wIasFjSg">
+                        Click Here</a></p>
+                <hr/>
 
-            .title {
-                font-size: 84px;
-            }
+                <h2>Solution: Error 2</h2>
+                <p>1 .If you get Unhandled exception has occurred in your application error while installing ExiledRos then you need to install Microsoft .Net Framework latest version. If you have already installed .Net Framework then repair it by going to Control Panel>Microsoft .Net framework>Repair</p>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
-        </div>
-    </body>
-</html>
+        </section>
+
+    </div>
+
+    <footer>
+        Rules of Survival Cheat Copyright 2019
+    </footer>
+
+@endsection
